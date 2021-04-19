@@ -436,3 +436,7 @@ C:\Users\Adrian\Desktop\c#\InAndOut2\InAndOut2\obj\Debug\net5.0\Razor\Views\Expe
 C:\Users\Adrian\Desktop\c#\InAndOut2\InAndOut2\obj\Debug\net5.0\Razor\Views\Expense\Create.cshtml.g.cs
 C:\Users\Adrian\Desktop\c#\InAndOut2\InAndOut2\obj\Debug\net5.0\Razor\Views\Expense\Delete.cshtml.g.cs
 C:\Users\Adrian\Desktop\c#\InAndOut2\InAndOut2\obj\Debug\net5.0\Razor\Views\Expense\Update.cshtml.g.cs
+C:\Users\Adrian\Desktop\c#\InAndOut2\InAndOut2\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
+C:\Users\Adrian\Desktop\c#\InAndOut2\InAndOut2\obj\Debug\net5.0\Razor\Views\Category\Delete.cshtml.g.cs
+C:\Users\Adrian\Desktop\c#\InAndOut2\InAndOut2\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\Adrian\Desktop\c#\InAndOut2\InAndOut2\obj\Debug\net5.0\Razor\Views\Category\Update.cshtml.g.cs
