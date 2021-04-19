@@ -35,9 +35,47 @@ namespace InAndOut2.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Expense obj)
         {
-            _db.Expenses.Add(obj);
+            if (ModelState.IsValid)
+            {
+                _db.Expenses.Add(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
+
+
+        // GET - Delete     
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            var obj = _db.Expenses.Find(id);
+            if(obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
+
+        // POST - Delete
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeletePost(int? id)
+        {
+            var obj = _db.Expenses.Find(id);
+            if(obj == null)
+            {
+                return NotFound();
+            }
+
+            _db.Expenses.Remove(obj);
             _db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index");       
         }
     }
 }
